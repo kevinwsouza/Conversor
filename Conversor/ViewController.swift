@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("olá")
         // Do any additional setup after loading the view.
     }
     override func didReceiveMemoryWarning() {
@@ -68,7 +67,9 @@ class ViewController: UIViewController {
         default :
             calcDistance()
         }
-        
+        view.endEditing(true)
+        let result = Double(lbResult.text!)!
+        lbResult.text = String(format: "%.2f", result)
     }
     func calcTemperature(){
         guard let temperature = Double(tfValue.text!) else {return}
