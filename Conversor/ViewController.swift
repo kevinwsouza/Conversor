@@ -32,7 +32,7 @@ class ViewController: UIViewController {
             btUnit1.setTitle("Kilograma", for: .normal)
             btUnit2.setTitle("Libra", for: .normal)
         case "Peso" :
-            lbUnit.text = "moeda"
+            lbUnit.text = "Moeda"
             btUnit1.setTitle("Real", for: .normal)
             btUnit2.setTitle("Dólar", for: .normal)
         case "Moeda" :
@@ -65,7 +65,7 @@ class ViewController: UIViewController {
             calcWeight()
         case "Moeda" :
             calcCurrency()
-        default: 
+        default :
             calcDistance()
         }
         
